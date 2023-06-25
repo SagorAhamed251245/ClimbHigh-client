@@ -37,10 +37,10 @@ const cardItems = [
 const SimpleCard = () => {
   return (
     <>
-      <div>
-        <div className="grid grid-cols-4 gap-3 h-96 mt-32 w-[85%] mx-auto uppercase">
+      
+        <div className="grid grid-cols-4 gap-3 h-auto  mt-32 w-[85%] mx-auto uppercase">
           {cardItems.map((item) => (
-            <div key={item._id} className=" flex flex-col group gap-5">
+            <div key={item._id} className=" flex flex-col h-[450px] group  ">
               {/* Card Image */}
               <div className="h-[40%] mb-3 w-full flex justify-center ">
                 <img
@@ -51,20 +51,22 @@ const SimpleCard = () => {
               </div>
               {/* Card body */}
 
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col   h-[60%] justify-between ">
                 <p className="text-sm font-bold"> ----ClimbHigh</p>
-                <h3 className="text-3xl mt-3 font-bold">
+                <h3 className="text-3xl  font-bold">
                   {item.name.slice(0, 10)}...
                 </h3>
                 <p className="font-bold  text-sm">{item.color}</p>
                 <p className="text-2xl font-bold">{item.price}</p>
+                <div>
                 <ButtonPrimary title={"Add To Cart"}></ButtonPrimary>
+                </div>
               </div>
               {/* end card */}
             </div>
           ))}
         </div>
-      </div>
+     
     </>
   );
 };
