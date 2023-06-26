@@ -1,4 +1,5 @@
 import Banner from "./Banner/Banner";
+import Gallery from "./Gallery/Gallery";
 import SimpleCard from "./SimpleCard/SimpleCard";
 import Slider from "./Slider/Slider";
 
@@ -8,6 +9,7 @@ const Home = () => {
       <Banner className="scroll-smooth "></Banner>
       <SimpleCard></SimpleCard>
       <Slider></Slider>
+      <Gallery></Gallery>
     </div>
   );
 };
