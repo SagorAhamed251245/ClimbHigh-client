@@ -32,7 +32,7 @@ const NavBar = () => {
           <div className=" bg-[#fffefe2d]  w-1/5 text-black flex justify-end items-center pr-3 gap-3">
             {user?.email ? (
               <>
-                <Link>
+                <Link to={'/cart'}>
                   <BiSolidCart className="text-white text-2xl"></BiSolidCart>
                 </Link>
                 <Link>

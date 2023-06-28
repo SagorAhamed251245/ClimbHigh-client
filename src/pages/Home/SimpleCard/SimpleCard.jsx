@@ -1,4 +1,5 @@
 
+import { addProductToLocalStorage } from "../../../api/LocalStorage";
 import ButtonPrimary from "../../../components/ButtonPrimary/ButtonPrimary";
 
 
@@ -29,8 +30,8 @@ const SimpleCard = ({products}) => {
                 </h3>
                 <p className="font-bold  text-sm">{item.color}</p>
                 <p className="text-2xl font-bold">{item.price}</p>
-                <div>
-                <ButtonPrimary title={"Add To Cart"}></ButtonPrimary>
+                <div onClick={()=> addProductToLocalStorage({id: item._id })}>
+                <ButtonPrimary  title={"Add To Cart"}></ButtonPrimary>
                 </div>
               </div>
               {/* end card */}

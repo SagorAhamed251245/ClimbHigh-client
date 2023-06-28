@@ -3,6 +3,7 @@ import Main from "../layout/Main/Main";
 import Home from "../pages/Home/Home";
 import Register from "../pages/Register/REgister";
 import Login from "../pages/Login/Login";
+import CartProduct from "../pages/CartProduct/CartProduct";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,11 @@ const router = createBrowserRouter([
         path: "login",
         element: <Login></Login>
       },
+      {
+        path:'cart',
+        element: <CartProduct></CartProduct>
+
+      }
     ],
   },
 ]);

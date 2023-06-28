@@ -16,3 +16,14 @@ export const setUser = (user) => {
     });
 };
 
+export const FindUsers = (email) => {
+  axios
+    .get(`${import.meta.env.VITE_apiUrl}/singup`, User )
+    .then(response => {
+    
+    })
+    .catch(error => {
+      console.log(error);
+    });
+}
+

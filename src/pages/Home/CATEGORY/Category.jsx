@@ -37,7 +37,7 @@ const Category = ({products}) => {
                   <p className="font-bold">ClimbHigh</p>
                   <div>
                     <p className=" text-sm md:text-2xl font-bold mb-4 ">{item.category}</p>
-                    <button className="py-2 hidden lg:inline-block w-28 bg-white text-black  rounded-sm font-bold">Add To Cart</button>
+                    
                     
                   </div>
                 </div>
