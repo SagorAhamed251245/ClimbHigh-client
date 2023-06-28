@@ -54,7 +54,7 @@ const AuthProvider = ({ children }) => {
             setUser(loggedUser)
             console.log(loggedUser?.email);
             if (loggedUser) {
-                console.log('inter asious');
+                console.log('inter axios ');
 
 
 

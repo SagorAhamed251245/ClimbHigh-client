@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
+import { setUser } from "../../api/userApi";
 
 const Register = () => {
   const { register, handleSubmit } = useForm();
@@ -19,8 +20,9 @@ const Register = () => {
         const userInfo = {
           displayName: name,
           email: result.user.email,
-          photoURL: photo,
         };
+
+        setUser(userInfo);
 
         location.state?.from?.pathname
           ? navigate(location.state.from.pathname)

@@ -39,8 +39,8 @@ const SimpleCard = () => {
     <>
       
         <div className="grid grid-cols-4 gap-3 h-auto  mt-32 w-[85%] mx-auto uppercase">
-          {cardItems.map((item) => (
-            <div key={item._id} className=" flex flex-col h-[450px] group  ">
+          {cardItems.map((item, index) => (
+            <div key={index} className=" flex flex-col h-[450px] group  ">
               {/* Card Image */}
               <div className="h-[40%] mb-3 w-full flex justify-center ">
                 <img
