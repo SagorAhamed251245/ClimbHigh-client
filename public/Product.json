@@ -5,10 +5,10 @@
     "price": 9.99,
     "category": "Accessories",
     "stock": 100,
-    "img": "https://example.com/product-image.jpg",
+    "img": "https://m.media-amazon.com/images/I/61rOQYshUfL._AC_SX679_.jpg",
     "images": [
-      "https://example.com/product-image-1.jpg",
-      "https://example.com/product-image-2.jpg"
+      "https://www.rei.com/dam/rinckenberger_111815_5040_rock_climbing_glossary_lg.jpg?t=ea16by9xs",
+      "https://images.english.elpais.com/resizer/C_0BkGS4Za3nfCdvrvhgMiqc1s4=/1960x1103/filters:focal(454x125:464x135)/cloudfront-eu-central-1.images.arcpublishing.com/prisa/NFSSMSCLYBDARNR5KWAYPTTFLA.jpg"
     ],
     "isActive": true,
     "size": "Medium",
@@ -21,10 +21,10 @@
     "price": 9.99,
     "category": "Accessories",
     "stock": 100,
-    "img": "https://example.com/product-image.jpg",
+    "img": "https://m.media-amazon.com/images/I/61rOQYshUfL._AC_SX679_.jpg",
     "images": [
-      "https://example.com/product-image-1.jpg",
-      "https://example.com/product-image-2.jpg"
+      "https://www.rei.com/dam/rinckenberger_111815_5040_rock_climbing_glossary_lg.jpg?t=ea16by9xs",
+      "https://images.english.elpais.com/resizer/C_0BkGS4Za3nfCdvrvhgMiqc1s4=/1960x1103/filters:focal(454x125:464x135)/cloudfront-eu-central-1.images.arcpublishing.com/prisa/NFSSMSCLYBDARNR5KWAYPTTFLA.jpg"
     ],
     "isActive": true,
     "size": "Medium",
@@ -37,10 +37,10 @@
     "price": 24.99,
     "category": "Accessories",
     "stock": 30,
-    "img": "https://example.com/carabiner-set-image.jpg",
+    "img": "https://m.media-amazon.com/images/I/815P07rKnIL._AC_UF1000,1000_QL80_.jpg",
     "images": [
-      "https://example.com/carabiner-set-image-1.jpg",
-      "https://example.com/carabiner-set-image-2.jpg"
+      "https://www.rollingstone.com/wp-content/uploads/2020/06/81jhfQw8wOL._AC_SL1500_-e1592523128152.jpg",
+      "https://cdn.divein.com/wp-content/uploads/Climbing/testing-carabiner-on-wall.jpg"
     ],
     "isActive": true,
     "size": "One Size",
@@ -53,10 +53,10 @@
     "price": 59.99,
     "category": "Backpack",
     "stock": 25,
-    "img": "https://example.com/climbing-helmet-image.jpg",
+    "img": "https://cdn.shopify.com/s/files/1/0698/3185/2331/products/2_b899951c-8ef7-49da-83ca-438b8e7a5fed_600x600.png?v=1672306602",
     "images": [
-      "https://example.com/climbing-helmet-image-1.jpg",
-      "https://example.com/climbing-helmet-image-2.jpg"
+      "https://a.storyblok.com/f/142343/1920x2400/80fa2a942f/hiking-on-mountain.jpg/m/769x586/smart",
+      "https://thedailyguardian.com/wp-content/uploads/2022/09/mountaneering.jpg"
     ],
     "isActive": true,
     "size": "One Size",
@@ -70,10 +70,10 @@
     "price": 29.99,
     "category": "Accessories",
     "stock": 20,
-    "img": "https://example.com/climbing-gloves-image.jpg",
+    "img": "https://cdn.shopify.com/s/files/1/0698/3185/2331/products/2_ed4657f7-fbe4-4fbe-a359-2959eb0a6a42_199x181.png?v=1672311104",
     "images": [
-      "https://example.com/climbing-gloves-image-1.jpg",
-      "https://example.com/climbing-gloves-image-2.jpg"
+      "https://www.outdoorresearch.com/media/catalog/category/S22_header_rock_climbing_gloves.jpg",
+      "https://u7q2x7c9.stackpathcdn.com/photos/20/9/322459_2321_XL.jpg"
     ],
     "isActive": true,
     "size": "Medium",
@@ -86,10 +86,10 @@
     "price": 49.99,
     "category": "Accessories",
     "stock": 15,
-    "img": "https://example.com/climbing-helmet-image.jpg",
+    "img": "https://www.climbingtechnology.com/wp-content/uploads/2019/11/ARIES_TREE-6X93102-1024x1024.png",
     "images": [
-      "https://example.com/climbing-helmet-image-1.jpg",
-      "https://example.com/climbing-helmet-image-2.jpg"
+      "https://www.rei.com/dam/rinckenberger_111815_2173_main_lg.jpg",
+      "https://scoutlife.org/wp-content/uploads/2018/04/climbing-feature.jpg"
     ],
     "isActive": true,
     "size": "One Size",
@@ -102,10 +102,10 @@
     "price": 79.99,
     "category": "Backpack",
     "stock": 50,
-    "img": "https://example.com/emily-daypack-image.jpg",
+    "img": "https://cdn.shopify.com/s/files/1/0698/3185/2331/products/2_b057d198-13ef-4db3-b735-655198506b18_199x181.png?v=1672305810",
     "images": [
-      "https://example.com/emily-daypack-image-1.jpg",
-      "https://example.com/emily-daypack-image-2.jpg"
+      "https://images.squarespace-cdn.com/content/v1/5b4544e485ede17941bc95fc/1602364484726-7DE2NTAWLOAMS3CZ8QS0/woman%2Bwith%2Bbackpack.jpg",
+      "https://www.carryology.com/wp-content/uploads/2020/05/Best-Day-Hiking-Backpacks-for-Outside-Adventures.jpg"
     ],
     "isActive": true,
     "size": "One Size",
@@ -118,10 +118,10 @@
     "price": 99.99,
     "category": "Backpack",
     "stock": 40,
-    "img": "https://example.com/expedition-backpack-image.jpg",
+    "img": "https://cdn.shopify.com/s/files/1/0698/3185/2331/products/2_b057d198-13ef-4db3-b735-655198506b18_199x181.png?v=1672305810",
     "images": [
-      "https://example.com/expedition-backpack-image-1.jpg",
-      "https://example.com/expedition-backpack-image-2.jpg"
+      "https://cdn.shopify.com/s/files/1/0049/9823/4230/collections/Trekking.png?v=1587443685",
+      "https://coresites-cdn-adm.imgix.net/outdoorsmagic/wp-content/uploads/2022/01/Best-Hiking-Backpack-Bach-Daydream.jpg?fit=crop"
     ],
     "isActive": true,
     "size": "One Size",
@@ -134,10 +134,10 @@
     "price": 79.99,
     "category": "Backpack",
     "stock": 30,
-    "img": "https://example.com/urban-commuter-backpack-image.jpg",
+    "img": "https://img.favpng.com/25/11/18/targus-15-6-urban-commuter-backpack-targus-commuter-15-6-inch-laptop-backpack-png-favpng-Ev1WM1CuyGYxEFsLhcaZ5XXsY.jpg",
     "images": [
-      "https://example.com/urban-commuter-backpack-image-1.jpg",
-      "https://example.com/urban-commuter-backpack-image-2.jpg"
+      "https://cdn.vitecimagingsolutions.com/fileadmin/Manfrotto/Global/Contents/Shopping-Assistant/Urban_Camera_Backpack/1.jpg",
+      "https://twowheelgear.img-us3.com/Michael/reid-behind2b.jpg"
     ],
     "isActive": true,
     "size": "One Size",
@@ -150,10 +150,10 @@
     "price": 129.99,
     "category": "Backpack",
     "stock": 20,
-    "img": "https://example.com/adventure-hiking-backpack-image.jpg",
+    "img": "https://cdn.shopify.com/s/files/1/0698/3185/2331/products/2_1e4dac3d-a2f3-4ef9-be0c-38d08ca10e8a_199x181.png?v=1672306800",
     "images": [
-      "https://example.com/adventure-hiking-backpack-image-1.jpg",
-      "https://example.com/adventure-hiking-backpack-image-2.jpg"
+      "https://coresites-cdn-adm.imgix.net/outdoorsmagic/wp-content/uploads/2021/01/Lowe-Alpine-Choltase.jpeg?fit=crop",
+      "https://cdn.shopify.com/s/files/1/1567/9395/files/backpack.jpg?v=1591613022"
     ],
     "isActive": true,
     "size": "One Size",
