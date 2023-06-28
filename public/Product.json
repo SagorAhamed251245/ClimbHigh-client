@@ -1,0 +1,163 @@
+[
+  {
+    "name": "ASCENSION RISER CLAMPS",
+    "description": "Climbing ropes are typically of kernmantle construction, consisting of a core (kern) of long twisted fibres and an outer sheath (mantle) of woven coloured fibres. The core provides about 70%...",
+    "price": 9.99,
+    "category": "Accessories",
+    "stock": 100,
+    "img": "https://example.com/product-image.jpg",
+    "images": [
+      "https://example.com/product-image-1.jpg",
+      "https://example.com/product-image-2.jpg"
+    ],
+    "isActive": true,
+    "size": "Medium",
+    "color": "black",
+    "colors": ["black", "red", "yellow"]
+  },
+  {
+    "name": "ASCENSION RISER CLAMPS",
+    "description": "Climbing ropes are typically of kernmantle construction, consisting of a core (kern) of long twisted fibres and an outer sheath (mantle) of woven coloured fibres. The core provides about 70%...",
+    "price": 9.99,
+    "category": "Accessories",
+    "stock": 100,
+    "img": "https://example.com/product-image.jpg",
+    "images": [
+      "https://example.com/product-image-1.jpg",
+      "https://example.com/product-image-2.jpg"
+    ],
+    "isActive": true,
+    "size": "Medium",
+    "color": "black",
+    "colors": ["black", "red", "yellow"]
+  },
+  {
+    "name": "Climbing Carabiner Set",
+    "description": "The Climbing Carabiner Set includes a set of three lightweight and durable carabiners. These carabiners are ideal for attaching equipment, securing ropes, and connecting harnesses during climbing activities.",
+    "price": 24.99,
+    "category": "Accessories",
+    "stock": 30,
+    "img": "https://example.com/carabiner-set-image.jpg",
+    "images": [
+      "https://example.com/carabiner-set-image-1.jpg",
+      "https://example.com/carabiner-set-image-2.jpg"
+    ],
+    "isActive": true,
+    "size": "One Size",
+    "color": "silver",
+    "colors": ["silver", "black", "orange"]
+  },
+  {
+    "name": "WOMEN'S RACHEL TOTE PURSE HANDBAG",
+    "description": "Early modern Europeans wore purses for one sole purpose: to carry coins. Purses were made of soft fabric or leather and were worn by men as often as ladies; the Scottish sporran is a survival of this custom. In the 17th century, young girls were taught embroidery as a necessary skill for marriage; this also helped them make very beautiful handbags.",
+    "price": 59.99,
+    "category": "Backpack",
+    "stock": 25,
+    "img": "https://example.com/climbing-helmet-image.jpg",
+    "images": [
+      "https://example.com/climbing-helmet-image-1.jpg",
+      "https://example.com/climbing-helmet-image-2.jpg"
+    ],
+    "isActive": true,
+    "size": "One Size",
+    "color": "red",
+    "colors": ["red", "blue", "white"]
+  },
+
+  {
+    "name": "Climbing Gloves",
+    "description": "The Climbing Gloves are designed to provide excellent grip and protection while climbing. These gloves feature a non-slip palm, reinforced fingers, and breathable material for enhanced comfort.",
+    "price": 29.99,
+    "category": "Accessories",
+    "stock": 20,
+    "img": "https://example.com/climbing-gloves-image.jpg",
+    "images": [
+      "https://example.com/climbing-gloves-image-1.jpg",
+      "https://example.com/climbing-gloves-image-2.jpg"
+    ],
+    "isActive": true,
+    "size": "Medium",
+    "color": "black",
+    "colors": ["black", "gray", "green"]
+  },
+  {
+    "name": "Climbing Helmet",
+    "description": "The Climbing Helmet is a lightweight and durable helmet designed to provide protection during climbing and mountaineering activities. It features an adjustable chin strap and ventilation for comfort.",
+    "price": 49.99,
+    "category": "Accessories",
+    "stock": 15,
+    "img": "https://example.com/climbing-helmet-image.jpg",
+    "images": [
+      "https://example.com/climbing-helmet-image-1.jpg",
+      "https://example.com/climbing-helmet-image-2.jpg"
+    ],
+    "isActive": true,
+    "size": "One Size",
+    "color": "red",
+    "colors": ["red", "blue", "white"]
+  },
+  {
+    "name": "WOMEN'S EMILY DAYPACK",
+    "description": "The Women's Emily Daypack is a versatile and stylish backpack designed for everyday use. It features multiple compartments for organization, padded shoulder straps for comfort, and a durable construction for long-lasting performance. Whether you're heading to work, school, or a weekend adventure, this backpack is the perfect companion.",
+    "price": 79.99,
+    "category": "Backpack",
+    "stock": 50,
+    "img": "https://example.com/emily-daypack-image.jpg",
+    "images": [
+      "https://example.com/emily-daypack-image-1.jpg",
+      "https://example.com/emily-daypack-image-2.jpg"
+    ],
+    "isActive": true,
+    "size": "One Size",
+    "color": "black",
+    "colors": ["black", "gray", "pink"]
+  },
+  {
+    "name": "MEN'S EXPEDITION BACKPACK",
+    "description": "The Men's Expedition Backpack is a rugged and spacious backpack designed for outdoor adventures. It features a large main compartment, multiple pockets for organization, padded shoulder straps and back panel for comfort, and durable construction to withstand tough conditions. Whether you're hiking, camping, or traveling, this backpack is built to carry all your essentials with ease.",
+    "price": 99.99,
+    "category": "Backpack",
+    "stock": 40,
+    "img": "https://example.com/expedition-backpack-image.jpg",
+    "images": [
+      "https://example.com/expedition-backpack-image-1.jpg",
+      "https://example.com/expedition-backpack-image-2.jpg"
+    ],
+    "isActive": true,
+    "size": "One Size",
+    "color": "green",
+    "colors": ["green", "black", "gray"]
+  },
+  {
+    "name": "MEN'S URBAN COMMUTER BACKPACK",
+    "description": "The Men's Urban Commuter Backpack is designed for style and functionality. It features a sleek and modern design with a dedicated laptop compartment, multiple pockets for organization, adjustable shoulder straps, and a water-resistant exterior. Whether you're commuting to work or traveling around the city, this backpack combines practicality with a contemporary look.",
+    "price": 79.99,
+    "category": "Backpack",
+    "stock": 30,
+    "img": "https://example.com/urban-commuter-backpack-image.jpg",
+    "images": [
+      "https://example.com/urban-commuter-backpack-image-1.jpg",
+      "https://example.com/urban-commuter-backpack-image-2.jpg"
+    ],
+    "isActive": true,
+    "size": "One Size",
+    "color": "gray",
+    "colors": ["gray", "black", "blue"]
+  },
+  {
+    "name": "MEN'S ADVENTURE HIKING BACKPACK",
+    "description": "The Men's Adventure Hiking Backpack is specifically designed for outdoor enthusiasts. It features a lightweight and durable construction, adjustable straps for a comfortable fit, multiple compartments and attachment points for gear organization, and a hydration bladder compatible design. Whether you're hiking, camping, or exploring the wilderness, this backpack is built to enhance your outdoor adventures.",
+    "price": 129.99,
+    "category": "Backpack",
+    "stock": 20,
+    "img": "https://example.com/adventure-hiking-backpack-image.jpg",
+    "images": [
+      "https://example.com/adventure-hiking-backpack-image-1.jpg",
+      "https://example.com/adventure-hiking-backpack-image-2.jpg"
+    ],
+    "isActive": true,
+    "size": "One Size",
+    "color": "blue",
+    "colors": ["blue", "green", "orange"]
+  }
+]
