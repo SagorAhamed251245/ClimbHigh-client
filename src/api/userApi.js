@@ -9,7 +9,7 @@ export const setUser = (user) => {
   axios
     .post(`${import.meta.env.VITE_apiUrl}/singup`, User )
     .then(response => {
-      console.log(response);
+    
     })
     .catch(error => {
       console.log(error);
