@@ -1,11 +1,17 @@
 import { useEffect, useRef, useState } from "react";
 import { getProductsFromLocalStorage } from "../../api/LocalStorage";
-import ProductApi from "../../api/productApi";
+import ProductApi from "../../api/ProductApi";
+// import { FindUsers } from "../../api/userApi";
+
+// import useAxiosSecure from "../../api/useAxiosSecure";
+import { Link } from "react-router-dom";
 
 const CartProduct = () => {
   const localProduct = getProductsFromLocalStorage();
   const [CartProducts, setCartProducts] = useState([]);
   const [products] = ProductApi();
+  // const [FindUser] = FindUsers();
+  // const [axiosSecure] = useAxiosSecure();
 
   const prevCartProductsRef = useRef([]);
 
@@ -21,8 +27,6 @@ const CartProduct = () => {
     }
   }, [localProduct, products]);
 
-  console.log(CartProducts);
-
   // Helper function to compare two arrays for equality
   function arraysEqual(arr1, arr2) {
     if (arr1.length !== arr2.length) {
@@ -36,11 +40,17 @@ const CartProduct = () => {
     return true;
   }
 
-  console.log(CartProducts);
+  
+  /* 
+const order = [
+    {
+      item_name: ,
 
-  const handelCackout = () => {
-    
-  }
+      unit_price: ,
+      quantity: ,
+      address: ,
+      transaction_id: 
+    }] */
 
   return (
     <div className=" min-h-[100vh] h-auto   ">
@@ -58,13 +68,16 @@ const CartProduct = () => {
               <p>color:{item.color}</p>
               <p>Quantity: 1</p>
               <p>Price: ${item.price}</p>
-              
             </div>
           </div>
         ))}
       </div>
       <div>
-        <button className="bg-yellow-900 text-white p-5">Payment</button>
+        <Link to="/cart/payment" state={CartProducts}>
+          <button className="bg-yellow-900 text-white p-5">
+            Proceed Checkout
+          </button>
+        </Link>
       </div>
     </div>
   );

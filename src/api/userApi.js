@@ -1,4 +1,8 @@
 import axios from "axios";
+import { useContext } from "react";
+import { AuthContext } from "../provider/AuthProvider";
+import useAxiosSecure from "./useAxiosSecure";
+import { useQuery } from "@tanstack/react-query";
 
 export const setUser = (user) => {
   const User = {
@@ -7,23 +11,31 @@ export const setUser = (user) => {
   };
 
   axios
-    .post(`${import.meta.env.VITE_apiUrl}/singup`, User )
-    .then(response => {
-    
-    })
-    .catch(error => {
+    .post(`${import.meta.env.VITE_apiUrl}/singup`, User)
+    .then((response) => {})
+    .catch((error) => {
       console.log(error);
     });
 };
 
-export const FindUsers = (email) => {
-  axios
-    .get(`${import.meta.env.VITE_apiUrl}/singup`, User )
+export const FindUsers = () => {
+  const { loading, user } = useContext(AuthContext);
+  const [axiosSecure] = useAxiosSecure();
+  const { refetch, data: FindUser = [] } = useQuery({
+    queryKey: ["user"],
+    enabled: !loading,
+    queryFn: async () => {
+      const res = await axiosSecure(`/profile/${user?.email}`);
+      return res.data;
+    },
+  });
+  return [FindUser, refetch];
+  /* axios
+    .get(`${import.meta.env.VITE_apiUrl}/profile/${email}`)
     .then(response => {
     
     })
     .catch(error => {
       console.log(error);
-    });
-}
-
+    }); */
+};
