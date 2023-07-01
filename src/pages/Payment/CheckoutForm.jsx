@@ -4,10 +4,12 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
 import useAxiosSecure from "../../api/useAxiosSecure";
 import { FindUsers } from "../../api/userApi";
-import axios from "axios";
-import { removeProductFromLocalStorage } from "../../api/LocalStorage";
 
-const CheckoutForm = ({ CartProducts }) => {
+import { removeProductFromLocalStorage } from "../../api/LocalStorage";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-hot-toast";
+
+const CheckoutForm = ({ CartProducts, address }) => {
   const { user } = useContext(AuthContext);
   const stripe = useStripe();
   const elements = useElements();
@@ -17,8 +19,8 @@ const CheckoutForm = ({ CartProducts }) => {
   const [transactionId, setTransactionId] = useState("");
   const [processing, setProcessing] = useState(false);
   const [FindUser] = FindUsers();
-  //   const navigate = useNavigate();
-  console.log(CartProducts);
+    const navigate = useNavigate();
+  
   const price = 10;
   useEffect(() => {
     const totalPrice = CartProducts.reduce(
@@ -26,12 +28,11 @@ const CheckoutForm = ({ CartProducts }) => {
       0
     );
 
-    console.log(totalPrice);
     if (price > 0) {
-      axios
+      axiosSecure
         .post(`${import.meta.env.VITE_apiUrl}/payment`, { price: totalPrice })
         .then((res) => {
-          console.log(res.data.clientSecret);
+          
           setClientSecret(res.data.clientSecret);
         });
     }
@@ -89,14 +90,15 @@ const CheckoutForm = ({ CartProducts }) => {
           quantity: 1,
           color: color,
         })),
-        address: "my home",
+        address: address,
         transaction_id: paymentIntent.id,
       };
       axiosSecure
         .post(`/order`, orderInfo)
         .then((response) => {
-          console.log(response);
+          toast.success('payment success.')
           removeProductFromLocalStorage()
+          navigate('/')
         })
         .catch((error) => {
           console.log(error);
@@ -109,10 +111,12 @@ const CheckoutForm = ({ CartProducts }) => {
         <CardElement
           options={{
             style: {
-              base: {
-                fontSize: "16px",
-                color: "#424770",
+              base: { 
+                
+                fontSize: "26px",
+                color: "#ffff",
                 "::placeholder": {
+                  
                   color: "#aab7c4",
                 },
               },
@@ -125,7 +129,7 @@ const CheckoutForm = ({ CartProducts }) => {
         <div className="w-full flex justify-center mt-5">
           <button
             type="submit"
-            className="bg-pink-500 border-black text-white rounded-lg w-36 p-2 mt-5 "
+            className="bg-white border-black text-black font-bold rounded-lg w-36 p-2 mt-5 "
             disabled={!stripe || !clientSecret || processing}
           >
             Pay

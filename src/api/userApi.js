@@ -30,12 +30,5 @@ export const FindUsers = () => {
     },
   });
   return [FindUser, refetch];
-  /* axios
-    .get(`${import.meta.env.VITE_apiUrl}/profile/${email}`)
-    .then(response => {
-    
-    })
-    .catch(error => {
-      console.log(error);
-    }); */
+ 
 };

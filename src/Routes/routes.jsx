@@ -5,34 +5,48 @@ import Register from "../pages/Register/REgister";
 import Login from "../pages/Login/Login";
 import CartProduct from "../pages/CartProduct/CartProduct";
 import Payment from "../pages/Payment/Payment";
+import AllProducts from "../pages/AllProducts/AllProducts";
+import PrivateRoute from "./PrivateRoute/PrivateRoute";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main></Main>,
+    element: (
+      <PrivateRoute>
+        <Main></Main>
+      </PrivateRoute>
+    ),
     children: [
       {
         path: "/",
         element: <Home></Home>,
       },
+     
       {
-        path: "register",
-        element: <Register></Register>,
-      },
-      {
-        path: "login",
-        element: <Login></Login>
-      },
-      {
-        path:'cart',
-        element: <CartProduct></CartProduct>
-
+        path: "cart",
+        element: (
+          <PrivateRoute>
+            <CartProduct></CartProduct>
+          </PrivateRoute>
+        ),
       },
       {
         path: "cart/payment",
-        element: <Payment></Payment>
-      }
+        element: <Payment></Payment>,
+      },
+      {
+        path: "allproduct",
+        element: <AllProducts></AllProducts>,
+      },
     ],
+  },
+  {
+    path: "register",
+    element: <Register></Register>,
+  },
+  {
+    path: "login",
+    element: <Login></Login>,
   },
 ]);
 

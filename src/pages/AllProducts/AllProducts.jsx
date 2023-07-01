@@ -1,13 +1,18 @@
 import { toast } from "react-hot-toast";
-import { addProductToLocalStorage } from "../../../api/LocalStorage";
-import ButtonPrimary from "../../../components/ButtonPrimary/ButtonPrimary";
+import { addProductToLocalStorage } from "../../api/LocalStorage";
+import ButtonPrimary from "../../components/ButtonPrimary/ButtonPrimary";
+import ProductApi from "../../api/productApi";
 
-const SimpleCard = ({ products }) => {
+const AllProducts = () => {
+  const [products] = ProductApi();
   return (
-    <>
+    <div>
       <div className="grid grid-cols-1 lg:grid-cols-4  md:grid-cols-2  gap-5  h-auto my-32   w-[85%] mx-auto uppercase">
-        {products.slice(0, 4).map((item) => (
-          <div key={item._id} className=" flex flex-col h-[450px] group   text-white mt-32 border p-5">
+        {products.map((item) => (
+          <div
+            key={item._id}
+            className=" flex flex-col h-[450px] group   text-white mt-32 border p-5"
+          >
             {/* Card Image */}
             <div className="h-[40%] mb-3 w-full flex justify-center ">
               <img
@@ -38,8 +43,8 @@ const SimpleCard = ({ products }) => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
-export default SimpleCard;
+export default AllProducts;
