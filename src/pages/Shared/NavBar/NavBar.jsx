@@ -4,6 +4,7 @@ import {
   BiSolidLogOutCircle,
   BiSolidCart,
 } from "react-icons/bi";
+import { MdPayments } from "react-icons/md";
 import { useContext } from "react";
 import { AuthContext } from "../../../provider/AuthProvider";
 
@@ -30,6 +31,9 @@ const NavBar = () => {
               <>
                 <Link to={"/cart"}>
                   <BiSolidCart className="text-white text-2xl"></BiSolidCart>
+                </Link>
+                <Link to={"/payment/history"}>
+                  <MdPayments className="text-white text-2xl hidden"></MdPayments>
                 </Link>
                 <Link>
                   <BiSolidLogOutCircle

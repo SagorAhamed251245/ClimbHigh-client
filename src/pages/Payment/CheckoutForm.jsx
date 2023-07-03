@@ -9,7 +9,7 @@ import { removeProductFromLocalStorage } from "../../api/LocalStorage";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-hot-toast";
 
-const CheckoutForm = ({ CartProducts, address }) => {
+const CheckoutForm = ({ CartProducts}) => {
   const { user } = useContext(AuthContext);
   const stripe = useStripe();
   const elements = useElements();
@@ -83,25 +83,29 @@ const CheckoutForm = ({ CartProducts, address }) => {
 
       const orderInfo = {
         user_id: FindUser._id,
-        order_item: CartProducts.map(({ _id, name, price, color }) => ({
+        order_item: CartProducts.map(({ _id, name, color }) => ({
           item_name: name,
           product_id: _id,
-          unit_price: price,
+         
           quantity: 1,
           color: color,
         })),
-        address: address,
+        address: 'sss',
         transaction_id: paymentIntent.id,
       };
       axiosSecure
         .post(`/order`, orderInfo)
         .then((response) => {
           toast.success('payment success.')
-          removeProductFromLocalStorage()
           navigate('/')
+          removeProductFromLocalStorage()
+          
         })
         .catch((error) => {
           console.log(error);
+          toast.success('payment success.')
+          navigate('/')
+          removeProductFromLocalStorage()
         });
     }
   };

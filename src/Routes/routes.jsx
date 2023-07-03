@@ -7,10 +7,13 @@ import CartProduct from "../pages/CartProduct/CartProduct";
 import Payment from "../pages/Payment/Payment";
 import AllProducts from "../pages/AllProducts/AllProducts";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
+import Error from "../pages/Error/Error";
+import PaymentHistory from "../pages/PaymentHistory/PaymentHistory";
 
 const router = createBrowserRouter([
   {
     path: "/",
+    errorElement: <Error></Error>,
     element: (
       <PrivateRoute>
         <Main></Main>
@@ -21,7 +24,7 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
       },
-     
+
       {
         path: "cart",
         element: (
@@ -33,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "cart/payment",
         element: <Payment></Payment>,
+      },
+      {
+        path: "payment/history",
+        element: <PaymentHistory></PaymentHistory>,
       },
       {
         path: "allproduct",
